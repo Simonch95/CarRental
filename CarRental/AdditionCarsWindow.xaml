@@ -1,0 +1,28 @@
+﻿<Window x:Class="CarRental.AdditionCarsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarRental"
+        mc:Ignorable="d"
+        Title="AdditionCarsWindow" Height="485" Width="330">
+    <Grid Background="BlueViolet">
+        <Label Content="Add new car" HorizontalAlignment="Left" Margin="120,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="Brand" HorizontalAlignment="Left" Margin="20,80" VerticalAlignment="Top" />
+        <Label Content="Model" HorizontalAlignment="Left" Margin="20,120" VerticalAlignment="Top" />
+        <Label Content="Year" HorizontalAlignment="Left" Margin="20,160" VerticalAlignment="Top" />
+        <Label Content="Price" HorizontalAlignment="Left" Margin="20,200" VerticalAlignment="Top"/>
+        <Label Content="Mileage" HorizontalAlignment="Left" Margin="20,240,0,0" VerticalAlignment="Top" />
+        <Label Content="Equipment" HorizontalAlignment="Left" Margin="15,285,0,0" VerticalAlignment="Top" />
+        <TextBox Name="_brandNewCarTB" HorizontalAlignment="Left" Height="23" Margin="100,80,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="_modelNewCarTB" HorizontalAlignment="Left" Height="23" Margin="100,120,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox  Name="_yearNewCarTB" HorizontalAlignment="Left" Height="23" Margin="100,160,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox  Name="_priceNewCarTB"  HorizontalAlignment="Left" Height="23" Margin="100,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="_mileageNewCarTB" HorizontalAlignment="Left" Height="23" Margin="100,240,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+       
+        <TextBox x:Name="_equipmentTB" HorizontalAlignment="Left" Height="88" Margin="100,292,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="170"/>
+        <Button Name="_addCarBTN" Content="Add" HorizontalAlignment="Left" Margin="20,410,0,0" VerticalAlignment="Top" Width="75" Click="AddCar_Click"/>
+        <Button  Name="_clearBTN" Content="Clear" HorizontalAlignment="Left" Margin="120,410,0,0" VerticalAlignment="Top" Width="75" Click="_clearBTN_Click"/>
+        <Button Name="_exitBTN" Content="Cancel" HorizontalAlignment="Left" Margin="220,410,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.4,0.318" Click="_exitBTN_Click"/>
+    </Grid>
+</Window>
